@@ -1,5 +1,7 @@
 <?php 
 
+//Rafael Carvalhais e Rafael Luz//
+
 $idadeA=5;
 $alturaA=1.70;
 $sexoA="F";
@@ -18,10 +20,11 @@ $sexoD="M";
 
 $idade=0;
 $altura=0;
-$sexo=0;
+$sexo="F";
 
 $cont=0;
 $media=0;
+
 
 
 while($cont <=5){
@@ -43,16 +46,28 @@ while($cont <=5){
 
 	echo("A maior altura é $alturaD e a menor altura é $alturaA.<br/>");
 
-while($sexo == "F"){
-	
-	}echo("A média de altura das mulheres é $sexo.<br/>");{
+if($sexo == "F"){
+		$media = ($alturaA+$alturaB)/ 2;
+	}	
 
-	$sexo=$alturaA+$alturaB+$alturaC+$alturaD; 
-	$media= ($sexo / 2);
-		
-
-	}
 	echo("A média de altura das mulheres é $media.<br/>");
+
+
+if ($idadeA > $idadeB) {
+		$idade = $idadeA;
+		$idadeA = $idadeB;
+		$idadeB = $idade;
+	}
+	
+if ($idadeC > $idadeD) {
+		$idade = $idadeC;
+		$idadeC = $idadeD;
+		$idadeD = $idade;
+	}
+	
+
+
+	echo("A idade do homem mais velho $idadeD e a idade da mulher mais velha é $idadeB.<br/>");
 
 
  ?>
